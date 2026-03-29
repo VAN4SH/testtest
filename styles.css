@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.nav a:hover {
+  background-color: #374151;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-box {
+  font-size: 14px;
+}
+
+.small-btn,
+.main-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.small-btn {
+  padding: 7px 12px;
+}
+
+.main-btn {
+  padding: 10px 14px;
+  background-color: #2563eb;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.hero {
+  background-color: #e5edff;
+  padding: 40px 0;
+}
+
+.hero h2 {
+  margin-top: 0;
+}
+
+.section {
+  padding: 25px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 18px;
+}
+
+.product-image {
+  min-height: 220px;
+  border: 2px dashed #9ca3af;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form {
+  max-width: 500px;
+}
+
+.form-message {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 14px 0;
+}
+
+/* Темная тема подключается через класс body.dark */
+body.dark {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+body.dark .hero {
+  background-color: #1f2937;
+}
+
+body.dark .card,
+body.dark .product-image,
+body.dark .input {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  border-color: #374151;
+}
+
+body.dark .footer,
+body.dark .header {
+  background-color: #0b1020;
+}
+
+@media (max-width: 700px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог - ТехноДом</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-row">
+      <h1 class="logo">ТехноДом</h1>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="product.html">Товар</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="small-btn" type="button">Тема</button>
+        <div class="cart-box">Корзина: <span id="cartCount">0</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h2>Каталог техники</h2>
+    <p>Ниже небольшой пример каталога. Можно искать товар по названию.</p>
+
+    <input id="searchInput" class="input" type="text" placeholder="Поиск, например: холодильник">
+
+    <div class="cards" id="catalogList">
+      <article class="card product-card" data-name="Холодильник Frost 300">
+        <h3>Холодильник Frost 300</h3>
+        <p>Цена: 39 900 ₽</p>
+        <button class="main-btn add-to-cart" type="button">Добавить в корзину</button>
+      </article>
+
+      <article class="card product-card" data-name="Стиральная машина WashPro 7">
+        <h3>Стиральная машина WashPro 7</h3>
+        <p>Цена: 29 500 ₽</p>
+        <button class="main-btn add-to-cart" type="button">Добавить в корзину</button>
+      </article>
+
+      <article class="card product-card" data-name="Пылесос CleanMax 2">
+        <h3>Пылесос CleanMax 2</h3>
+        <p>Цена: 12 300 ₽</p>
+        <button class="main-btn add-to-cart" type="button">Добавить в корзину</button>
+      </article>
+
+      <article class="card product-card" data-name="Микроволновка HeatQuick 20">
+        <h3>Микроволновка HeatQuick 20</h3>
+        <p>Цена: 9 900 ₽</p>
+        <button class="main-btn add-to-cart" type="button">Добавить в корзину</button>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 ТехноДом</p>
+    </div>
+  </footer>
+</body>
+</html>
