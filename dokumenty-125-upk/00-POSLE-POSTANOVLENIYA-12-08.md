@@ -10,6 +10,7 @@
 | `06-analiz-postanovleniya/analiz-postanovleniya-12-08-2026.md` | Подробный правовой разбор постановления |
 | `04-apellyaciya/apellyacionnaya-zhaloba.md` | Апелляционная жалоба |
 | `05-zhaloba-kks/zhaloba-v-kks-chuvashii.md` | Жалоба в ККС Чувашской Республики |
+| `07-zhaloba-na-prokuraturu/zhaloba-na-prokuraturu-leninskogo-rayona.md` | Жалоба Прокурору ЧР на прокуратуру Ленинского района |
 
 ## Сроки и порядок подачи
 
